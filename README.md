@@ -4,7 +4,7 @@ This is the repository for "A Segment Anything Model (SAM) based weakly supervis
 ## Finetuning with adapters
 Download SAM [checkpoint](https://github.com/facebookresearch/segment-anything#model-checkpoints), we used [ViT-B SAM model](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_b_01ec64.pth).
 
-The main finetuning code is in adapter_finetune.py.
+The main finetuning code is in adapter_finetune.py. Some example data is provided in the repository.
 
 ## Generating pseudo labels
 The codes of generating pseudo labels by different weak annotations lie in pseudoLabels_generate_XXX.py.
