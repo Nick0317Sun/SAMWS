@@ -117,8 +117,6 @@ class UNet_CBAM(nn.Module):
 
         c5 = self.conv5(p4)
 
-        c5 = self.cbam5(c5) + c5
-
         up_6 = self.up6(c5)
         merge6 = torch.cat([up_6, c4], dim=1)
         c6 = self.conv6(merge6)
