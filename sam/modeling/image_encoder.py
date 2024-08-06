@@ -159,7 +159,7 @@ class Block(nn.Module):
             rel_pos_zero_init=rel_pos_zero_init,
             input_size=input_size if window_size == 0 else (window_size, window_size),
         )
-        # ===============================增加的adapter==========================================================
+        # ===============================add adapter==========================================================
         self.MLP_Adapter = Adapter(dim, skip_connect=False)  # MLP-adapter, no skip connection
         self.Space_Adapter = Adapter(dim)  # with skip connection
         self.scale = scale
