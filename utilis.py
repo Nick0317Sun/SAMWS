@@ -37,8 +37,7 @@ def preprocess_input_image(img, sam_model, device='cuda:0'):
 
 def preprocess_input_bbox(bboxes, sam_model, img_H=128, img_W=128, device='cuda:0'):
     """
-        预处理bbox,处理成模型需要的格式,可以批处理，输入为[B, 4]， 需要原始图片大小
-        本质上应该是将坐标转化为了1024*1024中对应的坐标
+        preprocessing bbox to the format that SAM needs. The input is [B, 4]
     """
     # image embedding 3*1024*1024
     transform = ResizeLongestSide(sam_model.image_encoder.img_size)
@@ -54,7 +53,7 @@ def preprocess_input_points(points, sam_model, img_H=128, img_W=128, device='cud
     """
         process point to [b,2]
     """
-    # 转化为image embedding 3*1024*1024
+    # convert to image embedding 3*1024*1024
     transform = ResizeLongestSide(sam_model.image_encoder.img_size)
     point_trans = transform.apply_coords(points, (img_H, img_W))
     point_torch = torch.as_tensor(point_trans, dtype=torch.float, device=device)
