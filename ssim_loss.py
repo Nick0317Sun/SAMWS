@@ -1,4 +1,5 @@
-# https://github.com/Po-Hsun-Su/pytorch-ssim/blob/master/pytorch_ssim/__init__.py
+# The code is derived from https://github.com/Po-Hsun-Su/pytorch-ssim/blob/master/pytorch_ssim/__init__.py
+# Great gratitude to the original code authors
 import torch
 import torch.nn.functional as F
 from torch.autograd import Variable
