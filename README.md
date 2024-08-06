@@ -14,4 +14,4 @@ Our image classification model--attention-based U-Net is in cls_model directory.
 The segmentation model this study uses is [U-TAE](https://github.com/VSainteuf/utae-paps).
 
 ## Acknowledgement
-Spectial thanks to scholars from [Meta](https://github.com/facebookresearch/segment-anything) and [Junde Wu](https://github.com/KidsWithTokens/Medical-SAM-Adapter).
+Spectial thanks to scholars from [Meta](https://github.com/facebookresearch/segment-anything) and [Junde Wu](https://github.com/KidsWithTokens/Medical-SAM-Adapter) for their implementation of adapters in SAM.
