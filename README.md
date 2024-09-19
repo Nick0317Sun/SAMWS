@@ -13,5 +13,18 @@ Our image classification model--attention-based U-Net is in cls_model directory.
 ## Training a segmentation model
 The segmentation model this study uses is [U-TAE](https://github.com/VSainteuf/utae-paps).
 
+## Citation
+```
+@article{sun2024segment,
+  title={A Segment Anything Model based weakly supervised learning method for crop mapping using Sentinel-2 time series images},
+  author={Sun, Jialin and Yan, Shuai and Yao, Xiaochuang and Gao, Bingbo and Yang, Jianyu},
+  journal={International Journal of Applied Earth Observation and Geoinformation},
+  volume={133},
+  pages={104085},
+  year={2024},
+  publisher={Elsevier}
+}
+```
+
 ## Acknowledgement
 Spectial thanks to scholars from [Meta](https://github.com/facebookresearch/segment-anything) and [Junde Wu](https://github.com/KidsWithTokens/Medical-SAM-Adapter), as well as his fellows, for their implementation of adapters in SAM.
